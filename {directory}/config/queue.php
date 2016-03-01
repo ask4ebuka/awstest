@@ -14,6 +14,12 @@ return [
 	| Supported: "null", "sync", "database", "beanstalkd",
 	|            "sqs", "iron", "redis"
 	|
+	| OpenShift Notes:
+	|   IronMQ:     https://hub.openshift.com/addons/9-ironmq
+	|   IronWorker: https://hub.openshift.com/addons/10-ironworker
+	|   Redis:      https://hub.openshift.com/addons/34-redis
+	|   Redis Cloud:     https://hub.openshift.com/addons/17-rediscloud
+	|
 	*/
 
 	'default' => env('QUEUE_DRIVER', 'sync'),
